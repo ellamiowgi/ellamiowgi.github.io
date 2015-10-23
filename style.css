@@ -1,1 +1,11 @@
-style.css
+body {
+	background: black;
+}
+h1	{
+	font-family: 'Henny Penny', cursive;
+	color: white;
+}
+#container {
+	text-align: center;
+}
+Add Comment
