@@ -4,6 +4,8 @@ body {
 h1	{
 	font-family: 'Henny Penny', cursive;
 	color: #ff8c00;
+	font-size: 40px;
+	margin: 40px 0 0 0;
 }
 #container {
 	text-align: center;
