@@ -1,0 +1,35 @@
+body {
+	background: url("../images/background.jpg");
+	padding: 50px 25px;
+}
+
+.header {
+	/*width: 150px;*/
+	/*margin: 0 auto;*/
+	text-align: center;
+}
+
+.container {
+	/*width: 750px;*/
+	/*margin: 0 auto;*/
+	text-align: center;
+}
+
+.section {
+
+}
+
+span {
+	color: red;
+}
+
+.social-icons {
+	/*width: 150px;*/
+	/*margin: 0 auto;*/
+	text-align: center;
+}
+
+.blackbox {
+	background-color: black;
+	height: 50px;
+}
