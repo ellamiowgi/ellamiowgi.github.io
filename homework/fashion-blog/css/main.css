@@ -2,11 +2,13 @@ body {
 	font-family: Lato;
 	font-weight: lighter;
 	background-color: white;
+	border-left: 6px solid #dddddd;
 }
 
 .container {
 	max-width: 720px;
 	padding: 54px;
+	margin-top: -30px;
 }
 
 /*h1, 
@@ -23,29 +25,52 @@ p,
 h1 {
 	font-weight: lighter;
 	color: #DD0000;
+	font-size: 52px;
+	margin-bottom: 5px;
 }
 
 h2 {
 	font-weight: lighter;
+	margin-bottom: 15px;
+	font-size: 25px;
 }
 
 .date {
 	font-weight: lighter;
 	color: #cccccc;
+	font-size: 35px;
+	margin-top: 60px;
+	margin-bottom: 0px;
 }
 
 .article-title {
 	font-weight: lighter;
 	color: black;
+	font-size: 35px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+img {
+	max-width: 100%;
 }
 
 p {
 	color: #444444;
+	font-size: 18px;
 	line-height: 150%;
 }
 
 a {
 	text-decoration: none;
+}
+
+.continues {
+	text-align: right;
+	font-weight: bold;
+	font-size: 19px;
+	border-bottom: 1px solid #dddddd;
+	padding-bottom: 30px;
 }
 
 a:link {
@@ -62,10 +87,27 @@ a:hover {
 
 .main-nav a {
 	color: #dddddd;
+	font-size: 22px;
+	text-decoration: underline;
+	padding-right: 15px;
 }
 
 .main-nav a:hover {
 	color: black;
+	text-decoration: underline;
+}
+
+.footer-nav a {
+	font-size: 18px;
+	padding-right: 1px;
+}
+
+.footer-nav {
+	padding-top: 55px;
+}
+span {
+	color: #dddddd;
+	text-decoration: bold;
 }
 
 .copyright p {
