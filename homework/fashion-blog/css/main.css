@@ -1,0 +1,73 @@
+body {
+	font-family: Lato;
+	font-weight: lighter;
+	background-color: white;
+}
+
+.container {
+	max-width: 720px;
+	padding: 54px;
+}
+
+/*h1, 
+h2,
+.main-nav,
+h3,
+p,
+.footer-nav,
+.copyright {
+	font-family: Lato; 
+	font-weight: lighter;
+}*/
+
+h1 {
+	font-weight: lighter;
+	color: #DD0000;
+}
+
+h2 {
+	font-weight: lighter;
+}
+
+.date {
+	font-weight: lighter;
+	color: #cccccc;
+}
+
+.article-title {
+	font-weight: lighter;
+	color: black;
+}
+
+p {
+	color: #444444;
+	line-height: 150%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:link {
+	color: #DD0000;
+}
+
+a:visited {
+	color: #DD0000;
+}
+
+a:hover {
+	color: #aa0000;
+}
+
+.main-nav a {
+	color: #dddddd;
+}
+
+.main-nav a:hover {
+	color: black;
+}
+
+.copyright p {
+	color: #bbbbbb;
+}
