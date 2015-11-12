@@ -1,0 +1,38 @@
+.container {
+	width: 90%
+}
+
+header {
+	background: deeppink;
+	height: 100px;
+}
+
+.left {
+	background: gold;
+	height: 300px;
+	width: 15%;
+	float: left;
+	margin: 2% 0;
+}
+
+main {
+	background: mediumseagreen;
+	height: 300px;
+	width: 66%;
+	float: left;
+	margin: 2% 2%;
+}
+
+.right {
+	background: gold;
+	height: 300px;
+	width: 15%;
+	float: right;
+	margin: 2% 0;
+}
+
+footer {
+	background: dodgerblue;
+	height: 100px;
+	clear: both;
+}
