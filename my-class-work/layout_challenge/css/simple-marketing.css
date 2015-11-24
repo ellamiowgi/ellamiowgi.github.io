@@ -1,0 +1,29 @@
+.container {
+	width: 95%;
+	margin: 0 auto;
+}
+
+header {
+	background: deeppink;
+	height: 100px;
+}
+
+section {
+	background: gold;
+	height: 250px;
+	float: left;
+	width: 50%;
+}
+
+article {
+	background: mediumseagreen;
+	height: 100px;
+	float: left;
+	width: 33.333%;
+}
+
+footer {
+	background: dodgerblue;
+	height: 100px;
+	clear: both;
+}
