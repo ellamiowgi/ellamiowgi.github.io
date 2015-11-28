@@ -4,6 +4,7 @@ body {
 	/*margin-right: 8px;*/
 }
 
+/*would be best not to set a fixed width for container.  ideally want to be able to view the page at many different widths. floats help us accomplish this with pushing things to right or left of browser. we will talk more about responsive design.*/
 .container {
 	width: 900px;
 }
@@ -34,7 +35,7 @@ a {
 	padding-left: 7px;
 	font-size: 12px;
 }
-
+/*don't need ":link" here. https://css-tricks.com/pseudo-class-selectors/*/
 a:link {
 	color: white;
 }
@@ -148,6 +149,7 @@ h3 {
 	padding-left: 20px;
 	margin-top: 20px;
 	margin-bottom: 20px;
+	/*some extra spaces you can remove in this css before some closing brackets*/
 
 }
 
