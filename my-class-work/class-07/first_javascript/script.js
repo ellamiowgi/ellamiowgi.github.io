@@ -29,4 +29,4 @@ hello();
 // document.getElementById() = only used for getting single #ID element 
 
 
-// document.getElementById('title').style.color='red';
+document.getElementById('title').style.color='red';
