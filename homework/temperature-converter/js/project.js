@@ -5,9 +5,18 @@ function convertToCelsius () {
 
 	var convertedCelsius = (fahrenheit - 32) * .5556;
 
+	// Here is the conditional I added to check if input is blank so it's not read as 0 value - MIKE 
+	if (fahrenheit == '') {
+		convertedCelsius = '';
+	}
+
 	document.getElementById('celsiusResult').value = convertedCelsius
 
 // Question: after deleting a number in my "Enter Fahrenheit" input, the converter is reading that value as zero and leaving the "Celsius Result" calculated at "-17.7792". How do I eliminate that?
+
+// Great question. We can do a check to see if input is blank and use a conditional to clear out the result. -MIKE
+
+
 
 	if (convertedCelsius < 10) {
     	document.body.style.backgroundColor = "dodgerblue";
