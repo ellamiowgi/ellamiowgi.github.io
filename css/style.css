@@ -1,0 +1,384 @@
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* Set to dark blue so scrolling beyond parameters doesn't reveal white */
+body {
+  background-color: #283048;
+  font-family: "Jura", Verdana, sans-serif;
+  color: silver;
+}
+
+/* import the icon font */
+@font-face {
+    font-family: 'icomoon';
+    src:    url('../fonts/icomoon/icomoon.eot?ajyegb');
+    src:    url('../fonts/icomoon/icomoon.eot?ajyegb#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon/icomoon.ttf?ajyegb') format('truetype'),
+        url('../fonts/icomoon/icomoon.woff?ajyegb') format('woff'),
+        url('../fonts/icomoon/icomoon.svg?ajyegb#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* classes for icon font */
+.icon-mail4:before {
+    content: "\e900";
+}
+.icon-facebook:before {
+    content: "\e901";
+}
+.icon-twitter:before {
+    content: "\e902";
+}
+.icon-github:before {
+    content: "\e903";
+}
+
+.icon {
+	font-size: 30px;
+	color: #fff;
+	transition: color 150ms ease-in-out;
+}
+
+.icon:hover {
+	color: #ccc;
+}
+
+
+header {
+	/*height: 50px;*/
+	background-color: #283048;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding: 20px 0;
+	z-index: 10;
+
+}
+
+.logo {
+	float: left;
+	color: silver;
+	font-size: 21px;
+}
+
+/*nav {
+	float: right;
+}*/
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+.nav {
+	width: 90%;
+	margin: 0 auto;
+	position: relative;
+}
+
+.nav nav {
+	position: absolute;
+	right: 0
+}
+
+.nav nav a {
+	font-size: 17px;
+	margin-left: 10px;
+	padding: 7px 10px;
+	color: silver;
+	transition: color 100ms ease;
+	-webkit-transition: color 100ms ease;
+	/*add other vendor prefixes*/
+}
+
+.nav nav a:last-child {
+	border: 3px solid #d35400;
+	border-radius: 5px;
+}
+
+.nav nav a:hover 	{ color: #95a5a6; }
+.nav nav a:visited 	{ color: silver; }
+
+
+.section {
+	padding: 40px 20px 60px;
+}
+
+.section_header {
+	font-size: 30px;
+}
+
+#home {
+	/*I want this to be the size of the browser on load */
+	height: 450px;
+	/*background-color: lightgray;*/
+	clear: both;
+	margin-top: 56px;
+	position: relative;
+}
+
+.home_inner {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.home_header {
+	font-size: 61px;
+}
+
+.home_description {
+	font-size: 21px;
+	line-height: 150%;
+}
+
+#about {
+	/*min-height: 450px;*/
+	background: linear-gradient( rgba(40, 48, 72, .85), rgba(40, 48, 72, .85)), url("../images/about_background.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	/*background-color: dimgray;*/
+	/*padding: 20px 20px 50px;*/
+}
+
+.about {
+	display: inline-block;
+	width: 48%;
+	/*font-size: initial;*/
+	margin-left: 1%;
+}
+
+.about_header,
+.about_description {
+	text-align: center;
+	color: #fff;
+}
+
+.about_description {
+	margin-top: 10px;
+}
+
+.about-items {
+	font-size: 0;
+	width: 400px;
+	margin: 20px auto 0;
+	display: block;
+}
+
+.about_item {
+	width: 100%;
+	/*width: 49%;*/
+	display: inline-block;
+	font-size: initial;
+}
+
+.about_item + .about_item {
+	/*margin-left: 2%;*/
+	margin-top: 30px;
+}
+
+.about_item_image {
+	height: auto;
+	width: 100%;
+}
+
+.about_item_caption {
+	color: #fff;
+	text-align: center;
+}
+
+.about_item_caption span {
+	margin-top: 10px;
+	display: block;
+}
+
+#projects {
+	/*height: 450px;*/
+	background: linear-gradient( rgba(40, 48, 72, .85), rgba(40, 48, 72, .85)), url("../images/projects_background_bw.jpeg");
+	background-size: auto 110%;
+	background-position: bottom center;
+	background-repeat: no-repeat;
+	/*padding: 20px 20px 50px;*/
+}
+
+.projects_header,
+.projects_description {
+	text-align: center;
+}
+
+.projects_description {
+	margin-top: 10px;
+}
+
+.project-wrapper {
+	font-size: 0;
+}
+
+.project {
+	display: inline-block;
+	/*width: 24%;*/
+	width: 100%;
+	font-size: initial;
+	/*margin-left: 1%;*/
+	cursor: pointer;
+	margin-top: 30px;
+}
+
+.projects_header {
+	margin: 0 auto;
+}
+
+.project_image {
+	height: 170px;
+	width: 100%;
+	display: block;
+}
+
+.project_caption {
+	text-align: center;
+	padding: 5px;
+}
+
+#modals {
+	display: none;
+	position: fixed;
+	top: 56px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(100,100,100,0.8);
+}
+
+/* Active class to reveal the modal container */
+#modals.is-active {
+	display: block;
+}
+
+.modal {
+	display: none;
+}
+
+/* Active class to reveal a particular modal in the modal container */
+.modal.is-active {
+	display: block;
+}
+
+#contactUs {
+	height: 450px;
+	background: linear-gradient( rgba(40, 48, 72, .85), rgba(40, 48, 72, .85)), url("../images/contact_background_bw.jpeg");
+	background-size: auto 110%;
+	background-position: bottom center;
+	background-repeat: no-repeat;
+}
+
+.contactUs_inner {
+	width: 300px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.contactUs_description {
+	padding: 0 20px;
+	margin-top: 10px;
+}
+
+.contact_form input {
+	width: 100%;
+	margin-top: 10px;
+	padding: 5px 10px;
+}
+
+.contact_form textarea {
+	padding: 5px 10px;
+	margin-top: 10px;
+	width: 100%;
+	max-width: 100%;
+	min-width: 100%;
+	max-height: 100px;
+}
+
+input.contact_submit {
+	width: auto;
+}
+
+
+footer {
+	/*height: 50px;*/
+	background-color: transparent;
+	padding: 15px 0;
+}
+
+.socialIcons {
+	text-align: center;
+}
+
+.socialIcons > * + * {
+	margin-left: 20px;
+}
+
+.copyright {
+	color: #fff;
+	text-align: center;
+	margin-top: 10px;
+}
+
+/****************************
+Media Queries
+****************************/
+
+@media screen and (min-width: 480px) {
+	.about_item {
+		width: 49%;
+	}
+
+	.about_item + .about_item {
+		margin-left: 2%;
+		margin-top: 0;
+	}
+	.project {
+		margin-left: 1%;
+		width: 48%;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.project {
+		width: 32%;
+	}
+}
+
+
+
+
+
+
+
