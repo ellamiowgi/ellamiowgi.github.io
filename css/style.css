@@ -8,7 +8,7 @@ html, body {
   margin: 0px;
 }
 
-/* Set to dark blue so scrolling beyond parameters doesn't reveal white */
+
 body {
   background-color: #283048;
   font-family: "Jura", Verdana, sans-serif;
@@ -68,7 +68,6 @@ body {
 
 
 header {
-	/*height: 50px;*/
 	background-color: #283048;
 	position: fixed;
 	top: 0;
@@ -85,9 +84,6 @@ header {
 	font-size: 21px;
 }
 
-/*nav {
-	float: right;
-}*/
 
 a {
 	text-decoration: none;
@@ -136,9 +132,7 @@ img {
 }
 
 #home {
-	/*I want this to be the size of the browser on load */
 	height: 450px;
-	/*background-color: lightgray;*/
 	clear: both;
 	margin-top: 56px;
 	position: relative;
@@ -162,13 +156,12 @@ img {
 }
 
 #about {
-	/*min-height: 450px;*/
+	min-height: 650px;
 	background: linear-gradient( rgba(40, 48, 72, .85), rgba(40, 48, 72, .85)), url("../images/about_background.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
-	/*background-color: dimgray;*/
-	/*padding: 20px 20px 50px;*/
-}
+	padding-top: 150px;
+}ß
 
 .about {
 	display: inline-block;
@@ -180,7 +173,6 @@ img {
 .about_header,
 .about_description {
 	text-align: center;
-	color: #fff;
 }
 
 .about_description {
@@ -209,10 +201,10 @@ img {
 .about_item_image {
 	height: auto;
 	width: 100%;
+	border-radius: 50%;
 }
 
 .about_item_caption {
-	color: #fff;
 	text-align: center;
 }
 
@@ -293,7 +285,7 @@ img {
 }
 
 #contactUs {
-	height: 450px;
+	height: 300px;
 	background: linear-gradient( rgba(40, 48, 72, .85), rgba(40, 48, 72, .85)), url("../images/contact_background_bw.jpeg");
 	background-size: auto 110%;
 	background-position: bottom center;

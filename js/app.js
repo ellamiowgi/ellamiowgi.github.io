@@ -11,7 +11,7 @@ $(document).on('ready', function() {
 		// the height calculation which is what we anticipate
 		// when using box-sizing: border-box
 		$home.outerHeight(sectionHeight);
-		$contact.outerHeight(sectionHeight);
+		$contact.outerHeight(sectionHeight - 87);
 		return false;
 	}
 
